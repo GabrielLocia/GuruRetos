@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request, render_template
 import pymysql.cursors
-from ADN_Secuencias import hasMutation
 import re
 
 app = Flask(__name__)
