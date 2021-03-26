@@ -78,7 +78,7 @@ def mutacion():
                        database='mutations',
                        host='mutationserver.mysql.database.azure.com',
                        cursorclass=pymysql.cursors.DictCursor,
-                       ssl= {'ca':'../BaltimoreCyberTrustRoot.crt.pem'})
+                       ssl= {'ca':'./BaltimoreCyberTrustRoot.crt.pem'})
 
     
     dn = request.json['dna'] #obtiene el archivo json de la url 
