@@ -1,56 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('../img/adn2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.mu {
+  background-image: url('../img/dnaMu.jpg');
+}
+
+.mutation {
   
-  body {
-    min-height: 100vh;
-    background-image: url('../img/adn2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-  .mu {
-    background-image: url('../img/dnaMu.jpg');
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(225, 245, 246);
+  font-size: 1em;
+  justify-content: right;
+  align-items: center;
   
-  .mutation {
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(225, 245, 246);
-    font-size: 1em;
-    justify-content: right;
-    align-items: center;
-    
-    
-    
-  }
   
-  .mu .contenedor{
-     position: relative;
-     margin-top: 50px;
-     left: 20%;
   
-  }
-  
-  a{
-    font-size: 20px;
-    color: rgb(245, 191, 191);
-    text-decoration: none;
-  
-  }
-  
-  .contenedor {
-    width: auto;
-    margin: auto;  
-  }
-  
-  .Binvenida {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(21, 40, 41);
-  }
+}
+
+.mu .contenedor{
+   position: relative;
+   margin-top: 50px;
+   left: 20%;
+
+}
+
+a{
+  font-size: 20px;
+  color: rgb(245, 191, 191);
+  text-decoration: none;
+
+}
+
+.contenedor {
+  width: auto;
+  margin: auto;  
+}
+
+.Binvenida {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(21, 40, 41);
+}
