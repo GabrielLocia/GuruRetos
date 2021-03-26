@@ -70,10 +70,11 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/mutation', methods=['POST'])
+@app.route('/mutation', methods=['POST','GET'])
 def mutacion():
-    #Conexion a la base de datos 
+    
     if request.method == 'POST':
+        #Conexion a la base de datos 
         connection  = pymysql.connect(user='locia@mutationserver',
                         password='Gal14695238',
                         database='mutations',
@@ -104,8 +105,8 @@ def mutacion():
                     cursor.execute('INSERT INTO adn(id,DNA,Mutation) VALUES(%s,%s,%s)',(0,Stradn,cout_mutations))
                 connection.commit()
             return 'No se encotraron mutacinones', 403, {'Content-Type':'text/plain'}
-    
-    return render_template('secueciaMutacion.html')
+    else:
+        return render_template('secueciaMutacion.html')
    
 
 @app.route('/status')
